@@ -1,36 +1,112 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>我的网页</title>
-    <P>这是我的好儿子————徐安平</P>
-    
-  <style type="text/css">h1{font-size:100px}</style>
-    <!-- 可以在此处添加页面内容 -->  
-</head>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>BROKEN的个人网页</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="BROKEN">
+
+    <style>
+
+        .heard {
+        width: 800px;
+        height: 50px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .heard a {
+        height: 48px;
+        line-height: 48px;
+        text-decoration: none;
+        display: inline-block;
+        width: 160px;
+        text-align: center;
+        margin-top: 1px;
+        color: black;
+    }
+
+    .heard a:not(:first-child) {
+        margin-left: 48px;
+    }
+
+    .heard a:hover {
+        background-color: rgba(117, 117, 117, 0.642);
+    }
+
+
+    .bigbox {
+        width: 1000px;
+        margin: 0 auto;
+        height: 200px;
+    }
+    .title span{
+        background: linear-gradient(to right,#ec695c,#61c454)no-repeat right bottom;
+        background-size: 0 2px;
+        transition: background-size 1400ms;        ;
+    }
+    .title span:hover{
+        background-position-x: left;
+        background-size: 100% 2px;
+    }
+    body {
+        background-image: url("./img/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .footer {
+        width: 100%;
+        height: 50px;
+        color: #000;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .footer a {
+        color: #000000;
+    }
+    </style>
+
+
+    <style type="text/css">
+
+        h1{font-size:100px}
+
+    </style>
+    <!-- 可以在此处添加页面内容 -->
+</head>
 <body>
-    <script type="text/javascript">
-			runtime();
-			function runtime() {
-				// 初始时间，日/月/年 时:分:秒
-				X = new Date("8/15/2022 24:00:00");
-				Y = new Date();
-				T = (Y.getTime() - X.getTime());
-				M = 24 * 60 * 60 * 1000;
-				a = T / M;
-				A = Math.floor(a);
-				b = (a - A) * 24;
-				B = Math.floor(b);
-				c = (b - B) * 60;
-				C = Math.floor((b - B) * 60);
-				D = Math.floor((c - C) * 60);
-				//信息写入到DIV中
-				span.innerHTML = "本站已运行: " + A + "天" + B + "小时" + C + "分" + D + "秒"
-			}
-			setInterval(runtime, 1000);
-		</script>
-  <h1>好大儿</h1>
-    <!-- 在此处添加页面内容 -->  
-</body>  
+
+
+<h1 class="title" style="text-align: center">
+    <span>欢迎来到我的网站
+    </span>
+</h1>
+
+
+<div class="bigbox">
+
+        <div class="banner">
+            <div class="heard">
+                <a href="">首页</a>
+                <a href="">个人博客</a>
+
+                <a href="">联系我们</a>
+            </div>
+
+
+        </div>
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+    <p>© 2023 BROKEN | <a href="/beian.miit.gov.cn">京ICP备0000000号-1</a></p>
+    <p>Theme Made BY BROKEN | <a href="/abc.html">🎈BROKEN</a></p>
+    <br><br><br>
+</div>
+</body>
 </html>
