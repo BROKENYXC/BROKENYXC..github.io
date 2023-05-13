@@ -1,8 +1,177 @@
-<p>Hello 大家好</p>
-<p>我是爱吃饼干的小白鼠，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BROKEN的个人网站</title>
 
-<ul>
-  <li> <a href="https://broken.blog.csdn.net/">CSDN</a> </li>
-  <li> <a href="https://www.infoq.cn/u/broken">InfoQ</a> </li>
-</ul>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/blog_list.css">
+
+     <!--鼠标点击效果-->
+    <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
+
+
+    <!-- aplayer、meting -->
+    <!-- require APlayer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <!-- require MetingJS -->
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    <!--   一言、今日诗词   -->
+    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+    <!-- css xiahuaxian -->
+<style>
+    .desc span{
+        background: linear-gradient(to right,#ec695c,#61c454)no-repeat right bottom;
+        background-size: 0 2px;
+        transition: background-size 1400ms;        ;
+    }
+    .desc span:hover {
+        background-position-x: left;
+        background-size: 100% 2px;
+    }
+    .footer {
+        position: absolute;
+        background-color:bisque;
+        width: 100%;
+        height: 50px;
+        color:white;
+        clear:both;
+        text-align:center;
+        padding:5px;
+        }
+
+
+</style>
+</head>
+<body>
+
+
+    <!-- 导航栏. nav 是 导航 这个词的缩写 -->
+    <div class="nav">
+        <!-- logo -->
+        <img src="images/1.jpg" alt="">
+        <div class="title">我的博客网站</div>
+        <!-- 只是一个空白, 用来把后面的链接挤过去 -->
+        <!-- 这是一个简单粗暴的写法~~ -->
+        <div class="spacer"></div>
+        <a href="index.html">主页</a>
+        <a href="blog_edit.html">写博客</a>
+        <!-- 这里的地址回头再说 -->
+        <a href="">注销</a>
+    </div>
+
+    <!-- 页面的主体部分 -->
+    <div class="container">
+        <!-- 左侧信息 -->
+        <div class="container-left">
+            <!-- 这个 div 表示整个用户信息的区域 -->
+            <div class="card">
+                <!-- 用户的头像 -->
+                <img src="images/2.jpg" alt="">
+                <!-- 用户名 -->
+                <h3>BROKEN</h3>
+                <!-- gitee 地址 -->
+                <a href="https://github.com/BROKENYXC">github 地址</a>
+                <!-- 统计信息 -->
+                <div class="counter">
+                    <span> <a href="https://broken.blog.csdn.net">CSDN  </a></span>
+                    <span> <a href="https://www.infoq.cn/u/broken">InfoQ  </a></span>
+                    <span> <a href="https://juejin.cn/user/1473773004143341">掘金  </a></span>
+                </div>
+                <div class="counter">
+                    <span>159</span>
+                    <span>20</span>
+                    <span>32</span>
+
+                </div>
+            </div>
+<!--
+            <div class="card-widget card-announcement">
+                <div class="card-content">
+                    <div class="item-headline">
+                        <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                        <span>一言</span>
+                    </div>
+                    <div id="hitokoto"></div>
+                </div>
+            </div>
+            <div class="card-widget card-announcement">
+                <div class="card-content">
+                    <div class="item-headline">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>今日诗词</span>
+                    </div>
+                    <div id="jinrishici-sentence"></div>
+                </div>
+            </div>
+-->
+        </div>
+        <!-- 右侧信息 -->
+        <div class="container-right">
+            <!-- 这个 div 表示一个博客 -->
+            <div class="blog">
+                <div class="title">我的第一篇博客</div>
+                <!-- 博客的发布时间 -->
+                <div class="date">2023-05-02 11:20:00</div>
+                <!-- 博客的摘要 -->
+                <div class="desc">
+                    <!-- 使用 lorem 生成一段随机的字符串 -->
+                    <span>随着人工智能的不断发展，机器学习这门技术也越来越重要，很多人都开启了学习机器学习，本文就介绍了机器学习的基础内容。介绍OpenCV中图像的处理。</span>
+                </div>
+                <!-- html 中不能直接写 大于号，大于号可能会被当成标签一部分，使用转义字符 -->
+                <a href="https://broken.blog.csdn.net/article/details/129634466">查看全文 &gt;&gt; </a>
+            </div>
+            <div class="blog">
+                <div class="title">我的第二篇博客</div>
+                <!-- 博客的发布时间 -->
+                <div class="date">2023-05-04 14:20:00</div>
+                <!-- 博客的摘要 -->
+                <div class="desc">
+                    <!-- 使用 lorem 生成一段随机的字符串 -->
+                    <span>Ajax，全称为 Asynchronous JavaScript and XML，即异步的 JavaScript 和 XML。它不是一门编程语言，而是利用 JavaScript 在保证页面不被刷新、页面链接不改变的情况下与服务器交换数据并更新部分网页的技术。</span>
+                </div>
+                <!-- html 中不能直接写 大于号，大于号可能会被当成标签一部分，使用转义字符 -->
+                <!--<a href="blog_detail.html?blogId=1">查看全文 &gt;&gt; </a> -->
+                <a href="https://broken.blog.csdn.net/article/details/130547061">查看全文 &gt;&gt; </a>
+
+            </div>
+            <div class="blog">
+                <div class="title">我的第三篇博客</div>
+                <!-- 博客的发布时间 -->
+                <div class="date">2023-05-12 11:20:00</div>
+                <!-- 博客的摘要 -->
+                <div class="desc">
+                    <!-- 使用 lorem 生成一段随机的字符串 -->
+                    <span>Ajax（Asynchronous JavaScript and XML）是一种用于创建异步通信和动态交互的技术。它允许在不刷新整个页面的情况下，向服务器发送HTTP请求并获取响应，从而使Web应用程序更加流畅和响应灵活。</span>
+                </div>
+                <!-- html 中不能直接写 大于号，大于号可能会被当成标签一部分，使用转义字符 -->
+                <!-- blogId=1：点击不同的博客，跳转到的博客详情是不同内容 -->
+                <a href="https://broken.blog.csdn.net/article/details/130650220">查看全文 &gt;&gt; </a>
+            </div>
+        </div>
+    </div>
+
+    <article id="page">
+        <div class="article-container">
+            <h2>音乐</h2>
+            <meting-js auto="https://y.qq.com/n/yqq/playlist/7713574197.html">
+            </meting-js>
+            <hr>
+        </div>
+    </article>
+
+    <!-- 页脚 -->
+<div class="footer">
+
+    <p>©2023 BY BROKEN | <a href="https://github.com/BROKENYXC">BROKEN</a></p>
+</div>
+
+
+</body>
+</html>
