@@ -14,7 +14,7 @@ html {
 
 body {
     /* 注意, 这里的相对路径的写法 */
-    background-image: url(../images/background.jpg);
+    background-image: url(https://www.yuanxiapi.cn/api/img/);
     background-repeat: no-repeat;
     background-position: center center;
     /* 让图片尽可能填满整个元素 */
