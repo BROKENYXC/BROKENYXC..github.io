@@ -71,7 +71,6 @@
         <!-- 左侧信息 -->
         <div class="container-left">
             <!-- 这个 div 表示整个用户信息的区域 -->
-            <!--<img src="https://www.yuanxiapi.cn/api/ipimg"> -->
             <div class="card">
                 <!-- 用户的头像 -->
                 <img src="images/2.jpg" alt="">
@@ -81,9 +80,23 @@
                 <a href="https://github.com/BROKENYXC">github 地址</a>
                 <!-- 统计信息 -->
                 <div class="counter">
+
+                    <div class="img-logo">
+                        <img src = "images/1.png" onclick="window.location.href='https://broken.blog.csdn.net'" alt = "CSDN">
+                    </div>
+                    <div class="img-logo">
+                        <a href="https://www.infoq.cn/u/broken">
+                        <img src = "images/2.png" alt = "掘金">
+                        </a>
+                    </div>
+                    <div class="img-logo">
+                        <img src = "images/3.png" onclick="window.open('https://broken.blog.csdn.net','_blank')" alt ="infoq">
+                    </div>
+                    <!--
                     <span> <a href="https://broken.blog.csdn.net">CSDN  </a></span>
                     <span> <a href="https://www.infoq.cn/u/broken">InfoQ  </a></span>
                     <span> <a href="https://juejin.cn/user/1473773004143341">掘金  </a></span>
+                     -->
                 </div>
                 <div class="counter">
                     <span>159</span>
@@ -91,29 +104,30 @@
                     <span>32</span>
 
                 </div>
+
+
+                <div class="card-widget card-announcement">
+                    <div class="card-content">
+                        <div class="item-headline">
+                            <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                            <span>每日一言</span>
+                        </div>
+                        <div id="hitokoto"></div>
+                    </div>
+                </div>
+                <!--
+                <div class="card-widget card-announcement">
+                    <div class="card-content">
+                        <div class="item-headline">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span>今日诗词</span>
+                        </div>
+                        <div id="jinrishici-sentence"></div>
+                    </div>
+                </div>
+                -->
             </div>
 
-            <div class="card-widget card-announcement">
-                <div class="card-content">
-                    <div class="item-headline">
-                        <i class="fa fa-bullhorn" aria-hidden="true"></i>
-                        <span>一言</span>
-                    </div>
-                    <div id="hitokoto"></div>
-                </div>
-            
-            <!--
-            <div class="card-widget card-announcement">
-                <div class="card-content">
-                    <div class="item-headline">
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                        <span>今日诗词</span>
-                    </div>
-                    <div id="jinrishici-sentence"></div>
-                </div>
-            </div>
--->
-                </div>
         </div>
         <!-- 右侧信息 -->
         <div class="container-right">
